@@ -1,0 +1,35 @@
+/* ------------------------------------------------------------------
+||  Base
+------------------------------------------------------------------- */
+.wrapper {
+  padding: var(--spacer-3);
+
+  @media (min-width: 640px) {
+    padding: var(--spacer-4);
+  }
+
+  @media (min-width: 1080px) {
+    padding: var(--spacer-6);
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 32px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

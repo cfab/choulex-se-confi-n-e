@@ -1,0 +1,19 @@
+{
+  "language": "fr",
+  "title": "Choulex se confi-n-e !",
+  "url": "https://choulex-se-confi-n-e.netlify.com",
+  "feedUrl": "https://choulex-se-confi-n-e.netlify.com/feed.xml",
+  "slogan": "This photo blog is a 11ty template. It is open-source and an is a fast and straightforward way to publish your photos. All these photos you see here are examples copied from Unsplash.",
+  "favicon": ";-)",
+  "author": {
+    "name": "fab",
+    "email": "fabrice@banquise.ch"
+  },
+  "seo": {
+    "title": "Choulex se confi-n-e",
+    "description": "Un projet artistique collectif ouvert à tous"
+  },
+  "social": {
+    "instagram": "https://instagram.com/choulexseconfine"
+  }
+}

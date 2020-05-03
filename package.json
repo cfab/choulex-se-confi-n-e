@@ -1,0 +1,25 @@
+{
+  "name": "choulex-se-confi-n-e",
+  "version": "0.1.0",
+  "description": "This is a 11ty implementation of the photon photo blog",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev & gulp watch & eleventy --serve",
+    "build": "NODE_ENV=production gulp build && eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0-beta.3",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-responsive": "^3.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "markdown-it": "^10.0.0",
+    "moment": "^2.25.0"
+  }
+}
