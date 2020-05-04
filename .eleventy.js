@@ -16,7 +16,8 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return moment.utc(dateObj).format("MMMM Do, YYYY");
+    moment.locale('fr');
+    return moment.utc(dateObj).format("DD MMMM YYYY");
   });
 
   eleventyConfig.addFilter('machineReadableDate', (dateObj) => {
