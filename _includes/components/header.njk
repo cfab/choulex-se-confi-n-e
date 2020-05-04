@@ -3,6 +3,7 @@
     <h1 class="page-title">{{ metadata.title }}</h1>
     {# <p class="page-slogan" style="white-space: pre-line">{{ metadata.slogan }}</p> #}
       <p class="page-slogan" >{{ metadata.slogan | nl2br | safe }}</p>
+      <p class="page-content" >{{ metadata.content | nl2br | safe }}</p>
   </div>
   {% include "components/social-nav.njk" %}
 </header>
