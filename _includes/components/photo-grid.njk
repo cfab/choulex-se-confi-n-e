@@ -5,7 +5,8 @@
     <figure class="photo-grid-item__picture">
       <img loading="lazy" srcset="{{ photo.data.imageSource | gridItemSrcset }}" src="{{ photo.data.imageSource | gridItemSrc }}" sizes="(min-width: 640px) 50vw, (min-width: 1080px) 25vw, 100vw" alt="{{ photo.data.imageAlt }}" height="500" width="500">
     </figure>
-    <time class="photo-grid-item__date" datetime="{{ photo.date | machineReadableDate }}">{{ photo.date | readableDate }}</time>
+    <time class="photo-grid-item__date" datetime="{{ photo.date | machineReadableDate }}">{{ photo.date | readableDate }} </time>
+    <div class="photo-grid-item__caption">{{photo.data.caption | safe }}</div>
   </a>
   {% endfor %}
 </section>

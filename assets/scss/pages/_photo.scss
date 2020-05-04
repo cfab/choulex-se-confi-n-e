@@ -25,6 +25,34 @@
   object-fit: contain;
 }
 
+.photo-date {
+  position: absolute;
+  left: var(--spacer-3);
+  top: var(--spacer-3);
+
+  font-size: var(--type-scale-7);
+  font-weight: bold;
+  line-height: var(--leading-tight);
+  //visibility: hidden;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  //z-index: 20;
+}
+.photo-caption {
+  position: absolute;
+  left: var(--spacer-3);
+  bottom: var(--spacer-3);
+
+  font-size: var(--type-scale-7);
+  font-weight: normal;
+  line-height: var(--leading-tight);
+  //visibility: hidden;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  z-index: 20;
+}
+
+
 /* ------------------------------------------------------------------
 ||  Photo - Navigation
 ------------------------------------------------------------------- */
