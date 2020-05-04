@@ -73,6 +73,9 @@
   .photo-grid-item__date {
     visibility: visible;
   }
+  .photo-grid-item__caption {
+    visibility: visible;
+  }
 }
 
 .photo-grid-item__picture {
@@ -92,7 +95,7 @@
 .photo-grid-item__date {
   position: absolute;
   left: var(--spacer-3);
-  bottom: var(--spacer-3);
+  top: var(--spacer-3);
 
   font-size: var(--type-scale-7);
   font-weight: bold;
@@ -101,4 +104,17 @@
   letter-spacing: 0.05em;
   color: #ffffff;
   z-index: 20;
+}
+.photo-grid-item__caption {
+  position: absolute;
+  left: var(--spacer-3);
+  bottom: var(--spacer-3);
+
+  font-size: var(--type-scale-7);
+  font-weight: normal;
+  line-height: var(--leading-tight);
+  visibility: hidden;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  z-index: 25;
 }

@@ -9,6 +9,8 @@ bodyClass: photo
 <figure class="photo-frame" data-id="{{ caption | slug }}">
   <img class="photo-frame__image" srcset='{{ imageSource | photoSrcset }}' src="{{ imageSource | photoSrc }}" alt="{{ imageAlt }}">
 </figure>
+<time class="photo-date" datetime="{{ photo.date | machineReadableDate }}">{{ photo.date | readableDate }} </time>
+<div class="photo-caption">{{caption | safe }}</div>
 
 {% if previousPost %}
   <a class="photo-nav-link photo-nav-link--prev" href="{{ previousPost.url }}">
